@@ -1,0 +1,70 @@
+@import "../../../styles/colors.module.scss";
+.profileImg {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; 
+    object-fit: cover; 
+  }
+  
+  .row,
+  .imageRow{
+    display: flex;
+    align-items: center;
+  }
+
+  .bioRow{
+    border: 1px solid #d3d3d38c;
+    width: 70%;
+    margin: 30px auto;
+    padding: 40px 20px;
+    span{
+        color: #7b7979;
+    }
+  }
+
+  .contactRow{
+    text-align-last: center;
+    margin-bottom: 100px;
+    svg{
+        width: 20px;
+        height: 20px;
+    }
+  }
+  
+  .infoCol {
+    text-align: center;
+    padding: 0 10px;
+  }
+  
+  .backButton {
+    display: block;
+    margin: 50px 0 60px 0;
+    border-color: $lightRed;
+    color: white;
+  
+    &:hover {
+      background-color: transparent;
+      color: $lightGray;
+      border-color: $darkRed;
+    }
+  }
+
+  .imageNameCol{
+    display: inline-flex;
+    align-items: center;
+    font-size: 25px;
+    p{
+        margin-left: 10px;
+    }
+  }
+
+  .linkUsers{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .svgUsers{
+    margin-right: 5px;
+  }
+
+  

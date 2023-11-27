@@ -1,0 +1,62 @@
+@import "./colors.module.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  main {
+    background-color: #151515;
+    min-height: 100vh;
+    color: white;
+  
+    p {
+      margin: 0;
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #151515;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #868686;
+    border-radius: 40px;
+  }
+
+
+  .titleIndex{
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  .formSearch{
+    width: 50% !important;
+    margin: 30px auto 0;
+  }
+
+  .formBtn {
+    display: block;
+    margin: 40px auto 0 auto;
+    border-color: $lightRed !important;
+    color: #fff !important;
+    background-color: $darkRed !important;
+    display: table !important;
+  
+    &:hover {
+      background-color: transparent !important;
+      color: $lightGray;
+      border-color: $darkRed;
+    }
+  }
+
+  .historyBtn{
+    margin: 50px auto 0 auto;
+    display: block;
+    border-color: $lightRed !important;
+    color: #fff !important;
+    margin: 22px auto 0;
+    display: table !important;
+  }

@@ -1,0 +1,60 @@
+.headerLogged {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    border-bottom: 1px solid #ffffff80;
+    h1{
+      a{
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+  
+  .userInfo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    span{
+      color:#fff;
+    }
+  }
+  
+  .userInfo img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .submenu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+  
+  .submenu a,
+  .submenu button {
+    margin-bottom: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: #333;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submenu a:hover,
+  .submenu button:hover {
+    background-color: #ddd;
+  }
+  

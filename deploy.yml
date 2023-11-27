@@ -1,0 +1,33 @@
+version: 1
+applications:
+  github_front-next:
+    artifact: src/*
+    platform: nodejs
+    proxyServer:
+      nginx:
+        proxyPort: 80
+    environment_variables:
+      NODE_ENV: production
+    health:
+      nodecommand: "npm run health-check"
+    scaling:
+      mininstances: 1
+      maxinstances: 4
+    instanceprofile: aws-elasticbeanstalk-ec2-role
+    optionsettings:
+      - namespace: aws:elasticbeanstalk:application:environment
+        optionname: PARAM1
+        value: value1
+      - namespace: aws:elasticbeanstalk:container:nodejs
+        optionname: NodeCommand
+        value: "npm run start"
+    resources:
+      autoscalinggroupmaxsize: 4
+      autoscalinggroupminsize: 1
+      instancesize: t2.micro
+    solutionstack: 64bit Amazon Linux 2 v5.4.3 running Node.js
+    vpc:
+      id: vpc-12345678
+      publicsubnetid: subnet-12345678
+      privatesubnetid: subnet-87654321
+      elbpublicsubnetid: subnet-56789012

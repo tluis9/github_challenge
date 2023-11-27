@@ -1,0 +1,14 @@
+.tableHistory{
+    width: 86%;
+    margin: 0 7%;
+}
+
+.actionIcons{
+    svg{
+        cursor: pointer;
+        margin: 0 10px;
+    }
+    .buttonDisabled{
+        cursor: auto !important;
+    }
+}

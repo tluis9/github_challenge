@@ -1,0 +1,41 @@
+@import "./colors.module.scss";
+.main {
+  background-image: linear-gradient(to bottom, #151515, black);
+  display: flex;
+}
+
+.containerRepos{
+    margin: 50px auto 0;
+    width: 70%;
+}
+
+.backButton {
+    margin: 50px 0 60px 65px;
+    border-color: $lightRed;
+    color: white;
+  
+    &:hover {
+      background-color: transparent;
+      color: $lightGray;
+      border-color: $darkRed;
+    }
+  }
+
+  .languages{
+    margin-top: 25px;
+    font-style: italic;
+  }
+
+  .userTagLogin{
+    cursor: pointer;
+    text-decoration: underline;
+    color: $darkRed;
+  }
+
+  .paginationContainer{
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    margin: 30px 0 70px 0;
+    justify-content: space-around;
+  }
